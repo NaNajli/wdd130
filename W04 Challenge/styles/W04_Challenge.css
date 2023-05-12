@@ -1,0 +1,70 @@
+/*<a href= https://coolors.co/f4e285-f4a259-5b8e7d
+         target="_blank">https://coolors.co/f4e285-f4a259-5b8e7d</a>*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Comme:wght@200&family=Inter:wght@100&display=swap');
+
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Aclonica',Comme ExtraLight , sans-serif;
+    width: 100%;
+  }
+h1:hover {
+    background-color:#5b8e7d;
+    color:black;
+  }
+  img {
+    width: 80px;
+    border: 4px solid #5B8E7D;
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+  }
+
+main ol { width: 30%;
+         margin: 10px auto; 
+         text-align:center, left; 
+
+} 
+main ol li{ text-align: left;  
+
+}
+div{ font-family: 'Aclonica',Comme ExtraLight , sans-serif;
+
+}
+body,header{
+    
+    text-align: center; 
+    color: black;   
+    width: 80%;
+    margin: 10px auto; 
+    font-size: 1.5em;
+    background-color:#f4e285
+  }
+main li{ font-size: 1.0 em;
+        background-color:#f4e285;
+        text-align:center; 
+        font-size: 1.5em;
+
+}
+
+
+main p{ text-align: center;
+        color :#5b8e7d;
+        font-family:Inter 200;
+        font-size: 1.5 em;
+        
+} 
+footer {
+  text-align: center;
+  background-color:#f4e285;
+  font-size: 0.50 em;
+  margin: 50px auto; 
+  width: 80%;
+}
+
+
+
+ 

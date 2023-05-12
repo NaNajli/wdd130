@@ -1,0 +1,53 @@
+
+  nav {
+    background-color: steelblue;
+    padding: 10px;
+  }
+
+  a {
+    color: rgb(247, 243, 243);
+    margin: 40px;
+    font-size: 1.5em;
+  }
+  
+  h1 {
+    color: rgb(2, 8, 14);
+    text-align: center;
+  }
+  img {
+    width: 800px;
+    border: 4px solid steelblue;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    padding: 10px;
+    width: 80%;
+  }
+  footer {
+    background-color: steelblue;
+    color: white;  
+  }
+  nav, footer {
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+  } 
+  main p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 50px auto;
+}
+footer p {
+  font-size: 20px;
+  margin: 20px auto;
+}
+a:hover {
+  background-color: white;
+  color: steelblue;
+}
+
+   
