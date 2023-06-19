@@ -244,20 +244,18 @@ footer p a:hover {
           padding-bottom: 100px;
           z-index: 1;
           color:black;
-          font-family: Regular 400 Italic;}
+          }
 
 .canyonp{grid-column:3/7;
          grid-row:2/3;
          font-size: 16px;
          float: right;
-         font-family: Regular 400 Italic;
          margin-top: 150px;}  
          
 .coloradop{grid-column:3/7;
             grid-row:3/4;
             font-size: 16px;
             float: right;
-            font-family: Regular 400 Italic;
             margin-top: 160px;
             margin-bottom:100px;
           }   
@@ -269,11 +267,9 @@ footer p a:hover {
           padding-top:20px;
           z-index: 1;
           text-shadow:2px 2px 5px black;
-          font-family: Regular 400 Italic;
           background: #34A0A4;
           height: 40px;
           width: 400px;
-          align-self:top;
           border-radius: 5px;
         } 
 
@@ -284,11 +280,9 @@ footer p a:hover {
         margin-top: 100px;
         margin-left:250px;
         text-shadow:2px 2px 5px black;
-        font-family: Regular 400 Italic;
         background: #34A0A4;
         height: 40px;
         width: 400px;
-        align-self: top;
         border-radius: 5px;
         padding-top:20px;
         } 
@@ -297,11 +291,9 @@ footer p a:hover {
         z-index: 1;
         color:white;
         text-shadow:2px 2px 5px black;
-        font-family: Regular 400 Italic;
         background: #34A0A4;
         height: 40px;
         width: 400px;
-        align-self: top;
         border-radius: 5px;
         padding-top:20px;
         margin-left:250px;
@@ -316,7 +308,6 @@ footer p a:hover {
           grid-row:2/3;
           margin:5px;
           border-style: groove;
-          padding: auto;
  } 
 .back-box3{grid-column:1/9;
           grid-row:3/4;
@@ -353,92 +344,69 @@ footer p a:hover {
 
 /* CONTACT*/
 form {
-    /* Center the form on the page */
-    
     margin: 70px 450px 50px;
     width: 400px;
-    /* Form outline */
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
-    box-shadow: 5px 5px 10px #6f7364;
-    
+    box-shadow: 5px 5px 10px #6f7364;    
   }
   
-  ul {
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
-  form li + li {
+form li + li {
     margin-top: 1em;
   }
   
-  label {
-    /* Uniform size & alignment */
+label {
     display: inline-block;
     width: 90px;
     text-align: right;
   }
   
-  input,
-  textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
+input,
+textarea {
     font: 1em sans-serif;
-  
-    /* Uniform text field size */
     width: 300px;
     box-sizing: border-box;
-  
-    /* Match form field borders */
-    border: 1px solid #999;
-    
+    border: 1px solid #999;  
   }
-  input:focus,
-  textarea:focus {
-    /* Additional highlight for focused elements */
+input:focus,
+textarea:focus {
     border-color: #000;    
   }
   
-  textarea {
-    /* Align multiline text fields with their labels */
+textarea {
     vertical-align: top;
-  
-    /* Provide space to type some text */
     height: 5em;
   }
   
-  .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-    
+.button {
+    padding-left: 90px;  
   }
   
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
+button {
     margin-left: 0.5em;
     font-family:"Regular 400 Italic";
   }
-  #feedback {
+ #feedback {
     background-color: antiquewhite;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     padding: .5em;
-    /* make this element invisible until we are ready for it */
     display: none;      
 }
 .moveDown {
     margin-top: 3em;
 }
    
-  
 /* END*/
-
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
