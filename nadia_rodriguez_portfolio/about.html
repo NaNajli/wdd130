@@ -7,20 +7,41 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>Home</title>
 </head>
-<body>
-<header>
+<body class="bodyabout"> 
+<header class="headerabout">
     <a id="logo_link" href="home.html">
-        <img class="logo" src= "images/nadia_logo.png" alt="Logo">
+        <img class="logo" src= "images/logonadiarodri.png" alt="Logo">
     </a>
-    <nav>
+    <nav id ="aboutnav">
+        <div class="topnav">
+            <a class="active1" href="about.html">About</a>
+          </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
         <ul>
             <li><a href="home.html"> Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="whyme.html">Why me?</a></li>
          </ul>
+        </div>
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
     </nav>
 </header>
-<main>
+<main class="mainabout">
     <div id="aboutme"></div>
     <div class ="aboutp"><p>I am a person who has learned to persevere and achieve my goals
         thanks to my efforts and the company of family and friends. I am currently a Brigham 
@@ -31,15 +52,70 @@
         that I taught for almost a year. The first course I took was HTML and CSS at 
         Codecademy. At the same time, I began to prepare myself to improve my level of 
         English and be able to study at BYU. I am currently doing my first web and computer
-        programming certificate at BYU. Some Hobbies In addition to my love of technology,
-        design and code I am also interested in music. I have played guitar since I have 
-        sixteen years old it’s an activity that I do to relax and hope later to be able
-        to use my knowledge in music to contribute to technology.</p></div>
-    <img class= "display" src="images/icons8-team-7LNatQYMzm4-unsplash.jpg" alt="Imagen clouds">
-    <img class= "display1" src="images/Nadia.jpg" alt ="Imagen Nadia Rodriguez">
-    <img class= "display2" src="images/szabo-viktor-28ZbKOWiZfs-unsplash.jpg" alt="Imagen Szabo Viktor">      
-</main>
-<footer>
+        programming certificate at BYU.</p></div>  
+</main>              
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img  src="images/nadia.png" alt = "Imagen Nadia Rodriguez" style="width:100%">
+      <div class="text">I have played guitar since I have sixteen years old it’s an 
+       activity that I do to relax.</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/icons8-team-7LNatQYMzm4-unsplash.jpg" alt ="Imagen " style="width:100%">
+      <div class="text"> Some Hobbies In addition to my love of technology, design and code I am also interested in music... </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/szabo-viktor-28ZbKOWiZfs-unsplash.jpg" alt="Imagen" style="width:100%">
+      <div class="text">Hope later to be able to use my knowledge in music to contribute to technology.</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>  
+<footer class="footerabout">
     <div><p>Portfolio &copy; 2023 - Nadia Rodriguez</p></div>
     <img class="logofoot" src="images/logonadiarodri.png" alt="Logo">
     <div><p class = "finde" >You can find me here :</p></div>
