@@ -56,10 +56,6 @@
   padding: 10px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 
 .headerhome{      
        margin-left:70px;
@@ -87,7 +83,8 @@ li a {
   }      
 body{max-width: 1200px;
      margin-right: 5px;
-     }    
+     font-family: Nunito Sans, Sono; 
+     }   
 
 li a:hover {
       background-color:#156064;
@@ -237,7 +234,11 @@ footer p{grid-column: 1/3;
   font-size: 3em;
 }
 
-.bodyabout{background-color:#FBEFB1;}
+.bodyabout{background-color:#FBEFB1;
+           max-width: 1200px;
+           margin-right: 5px;
+           font-family: Nunito Sans, Sono; }
+
 .footerabout{background-color: white;}
 
 
@@ -257,7 +258,6 @@ footer p{grid-column: 1/3;
                       
 * {box-sizing: border-box}
 
-body {font-family: Verdana, sans-serif; margin:0}
 
 .mySlides {display: none}
 
@@ -334,18 +334,91 @@ img {vertical-align: center;}
         animation-name: fade;
         animation-duration: 1.5s;
       }
+
+
+/*PAGE 3 WHY ME?? */
+.why{
+     font-family:"Architects Daughter" ;
+     text-align: center;
+     }
+
+.mainwhy{display: grid;
+         grid-template-columns:1fr;
+         grid-template-rows: 1fr;
+         color:#FB8F67;
+         }     
+.why1{
+      font-family:"Architects Daughter";
+      text-align: center;
+      }   
+.why2{
+        font-family:"Architects Daughter";
+         text-align: center;}     
+        
+.pparallax1{ 
+            height:300px;
+             background-color:white;
+             font-size: 20px;
+             color: #156064;
+             text-align:center;
+             font-family:Nunito Sans ;
+             margin-left: 300px;
+             margin-top: 50px;}
+
+
+.parallax {
+  background-image: url("images/pexels-miguel-á-padriñán-1591060.jpg");
+
+  height: 500px;
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+
+  margin-left: 300px;
+}
+.parallax2 {
+  background-image: url("images/pexels-henry-&-co-17124221.jpg");
+
+  height: 300px;
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 300px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+
+  height:400px;
+  font: size 18px;
+  color: #156064;
+  text-align:center;
+  font-family:Nunito Sans ;
+ 
+}
+
+br {font-family: Nunito Sans;
+  font-size: 10px;}
+ 
       
 @keyframes fade {
      from {opacity: .4} 
      to {opacity: 1}
  }
    
-   /* On smaller screens, decrease text size */
    @media only screen and (max-width: 300px) {
      .prev, .next,.text {font-size: 11px}
  }  
         
-  
+ @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
     
 
 
