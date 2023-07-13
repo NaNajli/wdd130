@@ -215,6 +215,8 @@ footer p{grid-column: 1/3;
 
 /*PAGE 2 ABOUT*/
 
+.headerabout{margin-left:80px;}
+
 
 #aboutnav{font-family: "Nunito Sans";
           font-size: 20px;
@@ -337,15 +339,20 @@ img {vertical-align: center;}
 
 
 /*PAGE 3 WHY ME?? */
+
+.headerwhy{ margin-left:80px;}
+
 .why{
-     font-family:"Architects Daughter" ;
+     font-family:"Sono" ;
      text-align: center;
+     font-size: 4em;        
      }
 
 .mainwhy{display: grid;
          grid-template-columns:1fr;
          grid-template-rows: 1fr;
          color:#FB8F67;
+ 
          }     
 .why1{
       font-family:"Architects Daughter";
@@ -353,21 +360,38 @@ img {vertical-align: center;}
       }   
 .why2{
         font-family:"Architects Daughter";
-         text-align: center;}     
+         text-align: center;}    
+         
+.items, ul{ color:#156064;
+            text-align: center;
+            width: 100%;
+            font-size: 18px;
+
+        }         
         
 .pparallax1{ 
-            height:300px;
+            height:500px;
              background-color:white;
              font-size: 20px;
              color: #156064;
-             text-align:center;
              font-family:Nunito Sans ;
              margin-left: 300px;
-             margin-top: 50px;}
+             margin-top: 50px;
+             }
+ .pparallax2{ 
+              height:500px;
+               background-color:white;
+               font-size: 20px;
+               color: #156064;
+               font-family:Nunito Sans ;
+               margin-left: 300px;
+               margin-top: 50px;
+               text-align: center;
+               }             
 
 
 .parallax {
-  background-image: url("images/pexels-miguel-á-padriñán-1591060.jpg");
+  background-image: url("images/pexels-free-photoscc-64778.jpg");
 
   height: 500px;
   width: 100%;
@@ -380,7 +404,7 @@ img {vertical-align: center;}
   margin-left: 300px;
 }
 .parallax2 {
-  background-image: url("images/pexels-henry-&-co-17124221.jpg");
+  background-image: url("images/christina-wocintechchat-com-OtHEYbQXLFU-unsplash.jpg");
 
   height: 300px;
   width: 100%;
@@ -394,7 +418,7 @@ img {vertical-align: center;}
   margin-right: 50px;
 
   height:400px;
-  font: size 18px;
+  font-size: 18px;
   color: #156064;
   text-align:center;
   font-family:Nunito Sans ;
@@ -403,7 +427,10 @@ img {vertical-align: center;}
 
 br {font-family: Nunito Sans;
   font-size: 10px;}
- 
+
+.footerwhy{
+           width:100%;} 
+                
       
 @keyframes fade {
      from {opacity: .4} 

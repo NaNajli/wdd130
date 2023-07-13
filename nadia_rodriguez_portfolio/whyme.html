@@ -8,51 +8,94 @@
     <title>Home</title>
 </head>
 <body>
-<header>
+<header class = "headerwhy">
     <a id="logo_link" href="home.html">
-        <img class="logo" src= "images/nadia_logo.png" alt="Logo">
+        <img class="logo" src= "images/logonadiarodri.png" alt="Logo">
     </a>
-    <nav>
+    <nav class="navwhy">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ul>
             <li><a href="home.html"> Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="whyme.html">Why me?</a></li>
          </ul>
+        </div>
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
     </nav>
 </header>
-<main>
-    <div id="why"></div>
-    <h2 class = "academic">Academic Studies</h2>
-    <img class="web" src="images/pexels-miguel-á-padriñán-1591060.jpg" alt=" Imagen Pexels Miguel">
-    <div class="academp"><p>Bachelor’s Degree in Software Development- began April 2023 Online 
-        degree programs offered by BYU-Idaho and Ensign College, with support and resources
-        from BYU-Pathway worldwide. Courses: Programming with Functions Web Fundamentals
-        Python HTML CSS Curse: Agile Manual test with tools National Technological
-        University Arg Argentina Course Program 4.0. Fundamentals regarding the evaluation 
-        of software quality, the need for its existence and various implementation
-        methodologies. Introduction of procedures regarding the implementation of usability,
-        accessibility, security, performance and portability tests.</p>
-    </div>
+<main class = "mainwhy">
     <h1 class = "why">why me?</h1>
-    <div class="whyp"><p>During the tester course, I had the opportunity to work with a team, 
-        present practical work, and achieve objectives. In these projects, 
-        I was able to grow in knowledge, develop organizational capacity, explore my capacity,
-        and trust in my knowledge. I had the task of testing a web page, putting together
-        a test plan, designing test cases, executing them, carrying out an exploratory 
-        testing session, reporting improvements and defects. My most significant knowledge 
-        in the area of testing is planning and monitoring; Related to agile methodologies,
-        Scrum. (Jira software). I am a person with the ability to plan, detail and organize,
-        which generates a favorable environment to be able to fulfill my task as a tester
-        to detect errors and improve the quality of the software. I have ease and affinity 
-        with technology, which helps me to be constantly interested in training and updating
-        myself. At the same time, I have more than 6 years of experience in customer service, 
-        and I had the opportunity to always work as a team. I know that all these skills that 
-        I have are valuable for teamwork and I am willing to continue learning in order to 
-        continue improving.</p>
-    </div>
-    <img class="wall" src="images/pexels-henry-&-co-17124221.jpg" alt="Image Pexels-Henry">
 </main>
-<footer>
+<section> 
+    <div class="parallax"></div>   
+    <div class = "pparallax1">
+    <h2 class = "why1">Academic Studies:</h2>
+       <ul class="items">
+          <li>Bachelor’s Degree in Software Development- began April 2023</li>
+          <li>Degree programs offered by BYU-Idaho and Ensign College, with support and resources
+          from BYU-Pathway worldwide.
+              <ul>
+                 <li> <strong>Courses: </strong></li>
+                 <li>Programing with Functions</li>
+                 <li> Web Fundamentals</li> 
+              </ul> 
+          </li>      
+          <li><strong>Languages:</strong>
+               <ul>   
+                 <li> Python </li>
+                 <li> HTML </li>
+                 <li> CSS </li> 
+               </ul> 
+          </li>       
+           <li><strong>Agile Manual test with tools</strong> 
+               <ul>
+                  <li> Technological University Arg Argentina Course Program 4.0. </li>
+                  <li>Fundamentals regarding the evaluation of software quality, 
+               the need for its existence and various implementation methodologies.</li>
+                  <li>Introduction of procedures regarding the implementation of usability,
+                accessibility, security, performance and portability tests.</li>
+               </ul>  
+           </li>    
+       </ul>   
+    </div>  
+</section>
+<section>
+    <div class="parallax2"></div>
+    <div class = "pparallax2">       
+    <h2 class = "why2">Strengths:</h2>
+    During the tester course, I had the opportunity to work with a <strong>team</strong>  
+    ,present practical work, and achieve objectives. In these projects, 
+    I was able to grow in knowledge, develop organizational capacity, explore my capacity,
+    and trust in my knowledge.I had the task of <strong>testing</strong> a web page, putting together
+    a test <strong>plan</strong>, designing test cases,<strong>executing </strong> them, carrying out an exploratory 
+    testing session, reporting improvements and defects. My most significant knowledge 
+    in the area of testing is <strong>planning and monitoring</strong>; Related to <strong>agile methodologies</strong>,
+    Scrum. (Jira software). I am a person with the ability to plan, detail and organize,
+    which generates a favorable environment to be able to fulfill my task as a tester
+    to detect errors and improve the quality of the software. I have ease and affinity 
+    with <strong>technology</strong>, which helps me to be constantly interested in <strong>training and updating</strong>
+    myself. At the same time, I have more than 6 years of experience in customer service, 
+    and I had the opportunity to always work as a team. I know that all these skills that 
+    I have are valuable for teamwork and I am willing to continue learning in order to 
+    continue <strong>improving</strong>
+    </div>  
+</section>
+<footer class="footerwhy">
     <div><p>Portfolio &copy; 2023 - Nadia Rodriguez</p></div>
     <img class="logofoot" src="images/logonadiarodri.png" alt="Logo">
     <div><p class = "finde" >You can find me here :</p></div>
@@ -67,6 +110,6 @@
              <img src="images/linkedin.png" alt="Linkedin icon">
          </a>  
     </div>         
-</footer>   
+</footer>    
 </body>
 </html>
