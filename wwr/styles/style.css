@@ -204,7 +204,7 @@ footer p a:hover {
             text-align:center;
             font-family:"Shadows Into Light";
             text-shadow:2px 2px 5px #114D69; 
-            font-size: 4vw;
+            font-size: 7vw;
             color: white; 
             padding-top:15px;  
             margin:0px;
@@ -463,7 +463,8 @@ button {
         }    
      
     .grid-information{display: block;
-        height: auto;}
+                      height: auto;
+                      }
 
   
     .button-1, .button-2,.button-3{ display: block;
@@ -478,7 +479,10 @@ button {
             margin: 50px auto;
             width: 80%;
         }  
-    .title,.title2,.title3{font-size: 3vw;
-        }       
+    .title,.title2,.title3{font-size: 5vw;
+        float: left;
+    }
+                          
+                    
     
 }      
