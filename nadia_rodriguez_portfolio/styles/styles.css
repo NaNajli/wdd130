@@ -443,7 +443,7 @@ br {font-family: Nunito Sans;
      to {opacity: 1}
  }
    
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 350px) {
 .prev, .next,.text {font-size: 12px}
  }  
         
@@ -451,7 +451,9 @@ br {font-family: Nunito Sans;
  .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
+@media only screen and (max-width: 900px) {
+  html{font-size: 12px}
+   }  
 
   
 
