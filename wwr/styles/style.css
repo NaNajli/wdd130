@@ -204,11 +204,11 @@ footer p a:hover {
             text-align:center;
             font-family:"Shadows Into Light";
             text-shadow:2px 2px 5px #114D69; 
-            font-size: 7vw;
+            font-size: 8vw;
             color: white; 
-            padding-top:15px;  
+            padding-bottom:25px;  
             margin:0px;
-            z-index: 1;
+            z-index:1;
             height:60px;
             }
 
@@ -479,10 +479,9 @@ button {
             margin: 50px auto;
             width: 80%;
         }  
-    .title,.title2,.title3{font-size: 5vw;
-        float: left;
+    .title,.title2,.title3{font-size: 8vw;
+                           float: left;
     }
-                          
-                    
+                                     
     
 }      
