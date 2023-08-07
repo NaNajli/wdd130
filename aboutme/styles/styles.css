@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Klee+One&family=Lexend+Zetta&display=swap');
+
+
+
+body{background-color:#F2EFC7;
+     }
+h1{font-family: Allison;}
+h2{font-family: Lexend Zetta;
+   text-align: center;}
+p{font-family: Klee One;
+  text-align: center;
+  margin: 5px;}
+
+img {
+    width: 20%;
+    height: auto;
+    border-radius:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
